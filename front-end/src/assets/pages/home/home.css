@@ -1,0 +1,76 @@
+.services_section{
+    margin-inline: 200px;
+    display: flex;
+    position: relative;
+    padding-top: 40px;
+}
+.services_card{
+    text-align: center;
+    margin: auto;
+}
+.services_icon{
+    font-size: 40px;
+    padding-top:20px;
+    color: rgb(112, 143, 183);
+}
+.services_title{
+    margin-bottom: .5rem;
+    font-weight: 400;
+    font-size: 22px;
+}
+.services_description{
+    font-weight: 300;
+    color: grey;
+}
+
+.section-title{
+    margin-top: 5rem;
+}
+.header-btn{
+    border: 2px solid black;
+    border-radius: 19px;
+    padding: 10px 14px;
+    margin-top: 25px;
+    letter-spacing: 1px;
+    position: relative;
+    overflow: hidden;
+    transition: .5s;
+    z-index: 1;
+    color: black;
+}
+.header-btn::before, .header-btn::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 50px;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    border-radius: 60%;
+    z-index: -1;
+    background-color: black;
+    transition:1s ease;
+   }
+   
+   .header-btn::before {
+    top: -1em;
+    left: -1em;
+   }
+   
+   .header-btn::after {
+    left: calc(100% + 1em);
+    top: calc(100% + 1em);
+   }
+   
+   .header-btn:hover::before, .header-btn:hover::after {
+    height: 410px;
+    width: 410px;
+   }
+   
+   .header-btn:hover {
+    color: white;
+   }
+   
+   .header-btn:active {
+    filter: brightness(.8);
+   }
+   

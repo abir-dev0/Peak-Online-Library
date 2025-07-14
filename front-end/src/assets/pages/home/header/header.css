@@ -1,0 +1,75 @@
+.container{
+    width: 100%;
+    min-height: 60vh;
+    background: url('../../../images/l.jpg') center/cover no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.col{
+    flex-basis: 45%;
+    margin-bottom: 90px;
+}
+.h1{
+    position: relative;
+    font-size: 25px;
+    display: inline-block;
+    color: white;
+}
+p{
+    color: white;
+}
+.header-btn{
+    border: 2px solid white;
+    border-radius: 16px;
+    padding: 7px 10px;
+    font-size: 14px;
+    margin-top: 25px;
+    letter-spacing: 1px;
+    position: relative;
+    overflow: hidden;
+    transition: .5s;
+    z-index: 1;
+    color: white;
+}
+.header-btn::before, .header-btn::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 50px;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    border-radius: 60%;
+    z-index: -1;
+    background-color: white;
+    transition:1s ease;
+   }
+   
+   .header-btn::before {
+    top: -1em;
+    left: -1em;
+   }
+   
+   .header-btn::after {
+    left: calc(100% + 1em);
+    top: calc(100% + 1em);
+   }
+   
+   .header-btn:hover::before, .header-btn:hover::after {
+    height: 410px;
+    width: 410px;
+   }
+   
+   .header-btn:hover {
+    color: rgb(10, 25, 30);
+   }
+   
+   .header-btn:active {
+    filter: brightness(.8);
+   }
+   

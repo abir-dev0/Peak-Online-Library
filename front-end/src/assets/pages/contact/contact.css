@@ -1,0 +1,222 @@
+.contact-container{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 8%;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1100px;
+}
+.row section.col{
+    display: flex;
+    flex-direction: column;
+}
+/*left section*/
+.row section.left{
+    flex-basis: 35%;
+    min-width: 320px;
+    margin-right: 60px;
+
+}
+.row section.right{
+    flex-basis: 60%;
+}
+section.left .contact-title h2{
+    position: relative;
+    font-size: 28px;
+    display: inline-block;
+    margin-bottom: 25px;
+}
+section.left .contact-title h2::before{
+    content: "";
+    position: absolute;
+    width: 50%;
+    height: 1px;
+    top: 120%;
+    left: 0;
+}
+section.left .contact-title h2::after{
+    content: '';
+    position: absolute;
+    background-color: #98C1D9;
+    width: 30%;
+    height: 3px;
+    top: calc(110% - 1px);
+    left: 0;
+}
+section.left .contact-title p{
+    font-size: 17px;
+    line-height: 1.2;
+    padding-bottom: 22px;
+}
+section.left .contact-info{
+    margin-bottom: 16px;
+}
+.contact-info .icon-grp{
+    display: flex;
+    align-items: center;
+    margin: 25px 0;
+}
+.icon-grp .icon{
+    width: 45px;
+    height: 45px;
+    margin-right: 20px;
+    position: relative;
+}
+.icon-grp .icon span{
+    font-size: 20px;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+}
+.icon-grp .details span{
+    display: block;
+    font-size: 18px;
+}
+.vertical-line {
+    border: 1px solid #98C1D9; 
+    opacity: 0.2;
+    height: 485px; 
+    margin: 0; 
+  }
+  .social-media{
+    text-align: center;
+    padding: 5px;
+}
+.social-media a i{
+    transition-delay: 0.4s;
+}
+.social-media a{
+    display: inline-block;
+    text-align: center;
+    font-size: 30px;
+    padding: 1px 10px;
+    transition: 0.4s;
+    border-radius:50%;
+}
+.social-media  .fb-icon{
+    color:#1877F2;
+    
+}
+.social-media  .insta-icon{
+    color:#ed48b6;
+}
+.social-media .wtsp-icon{
+    color: rgb(4, 166, 4);
+    font-size: 32px;
+}
+.social-media a:hover{
+
+    transform: translateY(-5px);
+}
+/*right section*/
+.row section.right .message-form{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 30px;
+    margin-left:30px;
+    gap: 1px;
+    flex-direction: column;
+}
+.row section.right .input-form{
+    margin: 18px 0;
+    position: relative;
+    border: 1.5px solid #98C1D9;
+    border-radius: 10px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    transition: 0.2s ease-in-out;
+}
+.row section.right .input-form input {
+    margin-left: 10px;
+    border-radius: 10px;
+    border: none;
+    width: 85%;
+    height: 100%;
+}
+.row section.right .input-form textarea{
+    margin-left: 10px;
+    border-radius: 10px;
+    border: none;
+    width: 85%;
+    height: 100%;
+}
+.row section.right textarea{
+    margin: 18px 0;
+    position: relative;
+    border: 1.5px solid #98C1D9;
+    border-radius: 10px;
+    height: 100px;
+    display: block;
+    align-items: center;
+    padding: 10px 10px;
+    transition: 0.2s ease-in-out;
+    resize: none;
+}
+.row section.right textarea:focus{
+    border:1.5px solid black ;
+}
+textarea::-webkit-scrollbar{
+    width: 5px;
+}
+textarea::-webkit-scrollbar-track{
+    background-color: white;
+    border-radius: 5px;
+}
+textarea::-webkit-scrollbar-thumb{
+    background-color: black;
+    border-radius: 15px;
+}
+.row section.right .input:focus{
+    outline: none;
+}
+.row section.right .input-form:focus-within{
+    border: 1.5px solid black;
+}
+.flex-column > label {
+    color: #151717;
+    font-weight: 500;
+    font-weight:500;
+}
+.flex-column .label-urname{
+    margin-right: 350px;
+}
+.flex-column .label{
+    margin-right: 390px;
+}
+.button-form {
+    margin: 20px 0 10px 0;
+    background-color: #151717;
+    border: none;
+    color: white;
+    font-size: 15px;
+    font-weight: 500;
+    border-radius: 10px;
+    height: 50px;
+    width: 100%;
+    cursor: pointer;
+  }
+  .button-form:hover {
+    background-color: #252727;
+  }
+  @media(max-width:900px) {
+    .row{
+        flex-wrap: wrap;
+        
+    }
+    .vertical-line {
+        display: none;
+    }
+    .row section.col{
+        margin: 10px auto;
+    }
+  }
+
